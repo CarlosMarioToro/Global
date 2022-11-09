@@ -11,18 +11,23 @@
     <title>Global Store</title>
 </head>
 <body>
-    <nav class="w-full h-16 hidden bg-white justify-between fixed z-10 lg:flex dark:bg-gray-800">
-        <div class="h-16 w-16">
-            <img src="./img/Global-negro.png" alt="Logo Global">
+    <section class="w-full h-12 flex">
+        <div class="h-12 w-12 bg-logo bg-cover bg-center">
+            <!-- <img src="./img/Global-negro.png" alt="Logo Global"> -->
         </div>
-        <div class="flex space-x-8 p-4">
+        <button>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M4 6H20V8H4zM4 11H20V13H4zM4 16H20V18H4z"/></svg>
+            <svg class="hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M16.192 6.344L11.949 10.586 7.707 6.344 6.293 7.758 10.535 12 6.293 16.242 7.707 17.656 11.949 13.414 16.192 17.656 17.606 16.242 13.364 12 17.606 7.758z"/></svg>
+        </button>
+        <nav class="w-9/12 hidden bg-white justify-between z-10 p-4 lg:flex dark:bg-gray-800">
             <a class="font-bold text-base text-primary dark:text-white" href="#home">Inicio</a>
             <a class="font-bold text-base text-primary dark:text-white" href="#recomendados">Recomendados</a>
-            <a class="font-bold text-base text-primary dark:text-white" href="#rentas_destacadas">PCs</a>
-            <a class="font-bold text-base text-primary dark:text-white" href="#rentas_destacadas">Portatiles</a>
-            <a class="font-bold text-base text-primary dark:text-white" href="#rentas_destacadas">Sillas</a>
-        </div>
-        <div class="flex space-x-4 p-4 justify-center">
+            <a class="font-bold text-base text-primary dark:text-white" href="#Pcs">PCs</a>
+            <a class="font-bold text-base text-primary dark:text-white" href="#portatiles">Portatiles</a>
+            <a class="font-bold text-base text-primary dark:text-white" href="#monitores">Monitores</a>
+            <a class="font-bold text-base text-primary dark:text-white" href="#sillas">Sillas</a>
+        </nav>
+        <div class="w-2/12 flex justify-center p-4">
             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path class="fill-current text-primary dark:fill-white" fill-rule="evenodd" clip-rule="evenodd" d="M8 3.99997C6.93913 3.99997 5.92172 4.4214 5.17157 5.17155C4.42143 5.92169 4 6.93911 4 7.99997C4 9.06084 4.42143 10.0783 5.17157 10.8284C5.92172 11.5785 6.93913 12 8 12C9.06087 12 10.0783 11.5785 10.8284 10.8284C11.5786 10.0783 12 9.06084 12 7.99997C12 6.93911 11.5786 5.92169 10.8284 5.17155C10.0783 4.4214 9.06087 3.99997 8 3.99997ZM2 7.99997C1.99988 7.05568 2.22264 6.12468 2.65017 5.28271C3.0777 4.44074 3.69792 3.71157 4.4604 3.1545C5.22287 2.59743 6.10606 2.22819 7.03815 2.07681C7.97023 1.92543 8.92488 1.99618 9.82446 2.28332C10.724 2.57046 11.5432 3.06587 12.2152 3.72927C12.8872 4.39266 13.3931 5.20531 13.6919 6.10111C13.9906 6.9969 14.0737 7.95056 13.9343 8.88452C13.795 9.81848 13.4372 10.7064 12.89 11.476L17.707 16.293C17.8892 16.4816 17.99 16.7342 17.9877 16.9964C17.9854 17.2586 17.8802 17.5094 17.6948 17.6948C17.5094 17.8802 17.2586 17.9854 16.9964 17.9876C16.7342 17.9899 16.4816 17.8891 16.293 17.707L11.477 12.891C10.5794 13.5293 9.52335 13.9081 8.42468 13.9861C7.326 14.0641 6.22707 13.8381 5.2483 13.3329C4.26953 12.8278 3.44869 12.063 2.87572 11.1223C2.30276 10.1816 1.99979 9.10141 2 7.99997Z" fill="#3F3F46"/>
             </svg>
@@ -35,8 +40,8 @@
                 <path class="fill-gray-200 dark:fill-white" fill-rule="evenodd" clip-rule="evenodd" d="M10 9C10.7956 9 11.5587 8.68393 12.1213 8.12132C12.6839 7.55871 13 6.79565 13 6C13 5.20435 12.6839 4.44129 12.1213 3.87868C11.5587 3.31607 10.7956 3 10 3C9.20435 3 8.44129 3.31607 7.87868 3.87868C7.31607 4.44129 7 5.20435 7 6C7 6.79565 7.31607 7.55871 7.87868 8.12132C8.44129 8.68393 9.20435 9 10 9ZM3 18C3 17.0807 3.18106 16.1705 3.53284 15.3212C3.88463 14.4719 4.40024 13.7003 5.05025 13.0503C5.70026 12.4002 6.47194 11.8846 7.32122 11.5328C8.1705 11.1811 9.08075 11 10 11C10.9193 11 11.8295 11.1811 12.6788 11.5328C13.5281 11.8846 14.2997 12.4002 14.9497 13.0503C15.5998 13.7003 16.1154 14.4719 16.4672 15.3212C16.8189 16.1705 17 17.0807 17 18H3Z" fill="#3F3F46"/>
             </svg>
         </div>
-    </nav>
-    <section>
+    </section>
+    <section class="h-full  bg-green-100">
         <div class="w-full h-3/4" id="home">
             <div class="w-full h-3/4">
                 <div class="w-full h-full lg:h-[32rem] lg:bg-fondo2 lg:bg-cover lg:bg-center">
@@ -46,8 +51,8 @@
         </div>
         <div class="p-6" id="recomendados">
             <p class="text-3xl font-semibold text-primary dark:text-white">Recomendados</p>
-            <div class="w-auto h-96 items-center mt-6 flex flex-wrap gap-4 scrollbar-hide">
-                <div class="Card">
+            <div class="w-auto h-auto items-center mt-6 flex flex-wrap gap-4 scrollbar-hide">
+                <div class="Card w-80 lg:w-48">
                     <a href="">
                         <div class="w-full h-3/5 rounded-t-lg bg-PC1 bg-cover bg-center"></div>
                         <div class="w-full h-2/5 bg-color-fuente-formularios rounded-b-lg dark:bg-gray-700">
@@ -60,7 +65,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="Card">
+                <div class="Card w-80 lg:w-48">
                     <a href="">
                         <div class="w-full h-3/5 rounded-t-lg bg-PC2 bg-cover bg-center"></div>
                         <div class="w-full h-2/5 bg-color-fuente-formularios rounded-b-lg dark:bg-gray-700">
@@ -73,7 +78,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="Card">
+                <div class="Card w-80 lg:w-48">
                     <a href="">
                         <div class="w-full h-3/5 rounded-t-lg bg-PC3 bg-cover bg-center"></div>
                         <div class="w-full h-2/5 bg-color-fuente-formularios rounded-b-lg dark:bg-gray-700">
@@ -86,7 +91,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="Card">
+                <div class="Card w-80 lg:w-48">
                     <a href="">
                         <div class="w-full h-3/5 rounded-t-lg bg-PC4 bg-cover bg-center"></div>
                         <div class="w-full h-2/5 bg-color-fuente-formularios rounded-b-lg dark:bg-gray-700">
@@ -99,7 +104,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="Card">
+                <div class="Card w-80 lg:w-48">
                     <a href="">
                         <div class="w-full h-3/5 rounded-t-lg bg-PC5 bg-cover bg-center"></div>
                         <div class="w-full h-2/5 bg-color-fuente-formularios rounded-b-lg dark:bg-gray-700">
@@ -112,7 +117,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="Card">
+                <div class="Card w-80 lg:w-48">
                     <a href="">
                         <div class="w-full h-3/5 rounded-t-lg bg-PC6 bg-cover bg-center"></div>
                         <div class="w-full h-2/5 bg-color-fuente-formularios rounded-b-lg dark:bg-gray-700">
@@ -125,7 +130,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="Card">
+                <div class="Card w-80 lg:w-48">
                     <a href="">
                         <div class="w-full h-3/5 rounded-t-lg bg-PC7 bg-cover bg-center"></div>
                         <div class="w-full h-2/5 bg-color-fuente-formularios rounded-b-lg dark:bg-gray-700">
@@ -138,7 +143,12 @@
                         </div>
                     </a>
                 </div>
-                <div class="Card">
+            </div>
+        </div>
+        <div class="p-6" id="Pcs">
+            <p class="text-3xl font-semibold text-primary dark:text-white">Pcs</p>
+            <div class="w-auto h-auto items-center mt-6 flex flex-wrap gap-4 scrollbar-hide">
+                <div class="Card w-80 lg:w-48">
                     <a href="">
                         <div class="w-full h-3/5 rounded-t-lg bg-PC8 bg-cover bg-center"></div>
                         <div class="w-full h-2/5 bg-color-fuente-formularios rounded-b-lg dark:bg-gray-700">
@@ -151,7 +161,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="Card">
+                <div class="Card w-80 lg:w-48">
                     <a href="">
                         <div class="w-full h-3/5 rounded-t-lg bg-PC9 bg-cover bg-center"></div>
                         <div class="w-full h-2/5 bg-color-fuente-formularios rounded-b-lg dark:bg-gray-700">
@@ -164,7 +174,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="Card">
+                <div class="Card w-80 lg:w-48">
                     <a href="">
                         <div class="w-full h-3/5 rounded-t-lg bg-PC10 bg-cover bg-center"></div>
                         <div class="w-full h-2/5 bg-color-fuente-formularios rounded-b-lg dark:bg-gray-700">
@@ -177,7 +187,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="Card">
+                <div class="Card w-80 lg:w-48">
                     <a href="">
                         <div class="w-full h-3/5 rounded-t-lg bg-PC11 bg-cover bg-center"></div>
                         <div class="w-full h-2/5 bg-color-fuente-formularios rounded-b-lg dark:bg-gray-700">
@@ -190,7 +200,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="Card">
+                <div class="Card w-80 lg:w-48">
                     <a href="">
                         <div class="w-full h-3/5 rounded-t-lg bg-PC12 bg-cover bg-center"></div>
                         <div class="w-full h-2/5 bg-color-fuente-formularios rounded-b-lg dark:bg-gray-700">
@@ -203,9 +213,167 @@
                         </div>
                     </a>
                 </div>
-                <div class="Card">
+                <div class="Card w-80 lg:w-48">
                     <a href="">
                         <div class="w-full h-3/5 rounded-t-lg bg-PC13 bg-cover bg-center"></div>
+                        <div class="w-full h-2/5 bg-color-fuente-formularios rounded-b-lg dark:bg-gray-700">
+                            <p class="text-white font-bold text-x px-4 dark:text-white">Ref: Acer Nitro 5</p>
+                            <p class="text-white font-bold text-x px-4 dark:text-white">Proc: Core I5 10300h</p>
+                            <p class="text-white font-bold text-x px-4 dark:text-white">RAM: 8 GB DDR4</p>
+                            <p class="text-white font-bold text-x px-4 dark:text-white">HDD: 1TB</p>
+                            <p class="text-white font-bold text-x px-4 dark:text-white">Video: GTX 1650 4GB</p>
+                            <p class="text-white font-bold text-x px-4 dark:text-white">Precio: $ 2.650.000</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="Card w-80 lg:w-48">
+                    <a href="">
+                        <div class="w-full h-3/5 rounded-t-lg bg-PC14 bg-cover bg-center"></div>
+                        <div class="w-full h-2/5 bg-color-fuente-formularios rounded-b-lg dark:bg-gray-700">
+                            <p class="text-white font-bold text-x px-4 dark:text-white">Ref: Acer Nitro 5</p>
+                            <p class="text-white font-bold text-x px-4 dark:text-white">Proc: Core I5 10300h</p>
+                            <p class="text-white font-bold text-x px-4 dark:text-white">RAM: 8 GB DDR4</p>
+                            <p class="text-white font-bold text-x px-4 dark:text-white">HDD: 1TB</p>
+                            <p class="text-white font-bold text-x px-4 dark:text-white">Video: GTX 1650 4GB</p>
+                            <p class="text-white font-bold text-x px-4 dark:text-white">Precio: $ 2.650.000</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="p-6" id="portatiles">
+            <p class="text-3xl font-semibold text-primary dark:text-white">Portatiles</p>
+            <div class="w-auto h-auto items-center mt-6 flex flex-wrap gap-4 scrollbar-hide">
+                <div class="Card w-80 lg:w-48">
+                    <a href="">
+                        <div class="w-full h-3/5 rounded-t-lg bg-PC15 bg-cover bg-center"></div>
+                        <div class="w-full h-2/5 bg-color-fuente-formularios rounded-b-lg dark:bg-gray-700">
+                            <p class="text-white font-bold text-x px-4 dark:text-white">Ref: Acer Nitro 5</p>
+                            <p class="text-white font-bold text-x px-4 dark:text-white">Proc: Core I5 10300h</p>
+                            <p class="text-white font-bold text-x px-4 dark:text-white">RAM: 8 GB DDR4</p>
+                            <p class="text-white font-bold text-x px-4 dark:text-white">HDD: 1TB</p>
+                            <p class="text-white font-bold text-x px-4 dark:text-white">Video: GTX 1650 4GB</p>
+                            <p class="text-white font-bold text-x px-4 dark:text-white">Precio: $ 2.650.000</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="Card w-80 lg:w-48">
+                    <a href="">
+                        <div class="w-full h-3/5 rounded-t-lg bg-PC16 bg-cover bg-center"></div>
+                        <div class="w-full h-2/5 bg-color-fuente-formularios rounded-b-lg dark:bg-gray-700">
+                            <p class="text-white font-bold text-x px-4 dark:text-white">Ref: Acer Nitro 5</p>
+                            <p class="text-white font-bold text-x px-4 dark:text-white">Proc: Core I5 10300h</p>
+                            <p class="text-white font-bold text-x px-4 dark:text-white">RAM: 8 GB DDR4</p>
+                            <p class="text-white font-bold text-x px-4 dark:text-white">HDD: 1TB</p>
+                            <p class="text-white font-bold text-x px-4 dark:text-white">Video: GTX 1650 4GB</p>
+                            <p class="text-white font-bold text-x px-4 dark:text-white">Precio: $ 2.650.000</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="Card w-80 lg:w-48">
+                    <a href="">
+                        <div class="w-full h-3/5 rounded-t-lg bg-PC17 bg-cover bg-center"></div>
+                        <div class="w-full h-2/5 bg-color-fuente-formularios rounded-b-lg dark:bg-gray-700">
+                            <p class="text-white font-bold text-x px-4 dark:text-white">Ref: Acer Nitro 5</p>
+                            <p class="text-white font-bold text-x px-4 dark:text-white">Proc: Core I5 10300h</p>
+                            <p class="text-white font-bold text-x px-4 dark:text-white">RAM: 8 GB DDR4</p>
+                            <p class="text-white font-bold text-x px-4 dark:text-white">HDD: 1TB</p>
+                            <p class="text-white font-bold text-x px-4 dark:text-white">Video: GTX 1650 4GB</p>
+                            <p class="text-white font-bold text-x px-4 dark:text-white">Precio: $ 2.650.000</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="Card w-80 lg:w-48">
+                    <a href="">
+                        <div class="w-full h-3/5 rounded-t-lg bg-PC1 bg-cover bg-center"></div>
+                        <div class="w-full h-2/5 bg-color-fuente-formularios rounded-b-lg dark:bg-gray-700">
+                            <p class="text-white font-bold text-x px-4 dark:text-white">Ref: Acer Nitro 5</p>
+                            <p class="text-white font-bold text-x px-4 dark:text-white">Proc: Core I5 10300h</p>
+                            <p class="text-white font-bold text-x px-4 dark:text-white">RAM: 8 GB DDR4</p>
+                            <p class="text-white font-bold text-x px-4 dark:text-white">HDD: 1TB</p>
+                            <p class="text-white font-bold text-x px-4 dark:text-white">Video: GTX 1650 4GB</p>
+                            <p class="text-white font-bold text-x px-4 dark:text-white">Precio: $ 2.650.000</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="Card w-80 lg:w-48">
+                    <a href="">
+                        <div class="w-full h-3/5 rounded-t-lg bg-PC2 bg-cover bg-center"></div>
+                        <div class="w-full h-2/5 bg-color-fuente-formularios rounded-b-lg dark:bg-gray-700">
+                            <p class="text-white font-bold text-x px-4 dark:text-white">Ref: Acer Nitro 5</p>
+                            <p class="text-white font-bold text-x px-4 dark:text-white">Proc: Core I5 10300h</p>
+                            <p class="text-white font-bold text-x px-4 dark:text-white">RAM: 8 GB DDR4</p>
+                            <p class="text-white font-bold text-x px-4 dark:text-white">HDD: 1TB</p>
+                            <p class="text-white font-bold text-x px-4 dark:text-white">Video: GTX 1650 4GB</p>
+                            <p class="text-white font-bold text-x px-4 dark:text-white">Precio: $ 2.650.000</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="Card w-80 lg:w-48">
+                    <a href="">
+                        <div class="w-full h-3/5 rounded-t-lg bg-PC3 bg-cover bg-center"></div>
+                        <div class="w-full h-2/5 bg-color-fuente-formularios rounded-b-lg dark:bg-gray-700">
+                            <p class="text-white font-bold text-x px-4 dark:text-white">Ref: Acer Nitro 5</p>
+                            <p class="text-white font-bold text-x px-4 dark:text-white">Proc: Core I5 10300h</p>
+                            <p class="text-white font-bold text-x px-4 dark:text-white">RAM: 8 GB DDR4</p>
+                            <p class="text-white font-bold text-x px-4 dark:text-white">HDD: 1TB</p>
+                            <p class="text-white font-bold text-x px-4 dark:text-white">Video: GTX 1650 4GB</p>
+                            <p class="text-white font-bold text-x px-4 dark:text-white">Precio: $ 2.650.000</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="Card w-80 lg:w-48">
+                    <a href="">
+                        <div class="w-full h-3/5 rounded-t-lg bg-PC4 bg-cover bg-center"></div>
+                        <div class="w-full h-2/5 bg-color-fuente-formularios rounded-b-lg dark:bg-gray-700">
+                            <p class="text-white font-bold text-x px-4 dark:text-white">Ref: Acer Nitro 5</p>
+                            <p class="text-white font-bold text-x px-4 dark:text-white">Proc: Core I5 10300h</p>
+                            <p class="text-white font-bold text-x px-4 dark:text-white">RAM: 8 GB DDR4</p>
+                            <p class="text-white font-bold text-x px-4 dark:text-white">HDD: 1TB</p>
+                            <p class="text-white font-bold text-x px-4 dark:text-white">Video: GTX 1650 4GB</p>
+                            <p class="text-white font-bold text-x px-4 dark:text-white">Precio: $ 2.650.000</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="p-6" id="monitores">
+            <p class="text-3xl font-semibold text-primary dark:text-white">Monitores</p>
+            <div class="w-auto h-auto items-center mt-6 flex flex-wrap gap-4 scrollbar-hide">
+                <div class="Card w-80 lg:w-48">
+                    <a href="">
+                        <div class="w-full h-3/5 rounded-t-lg bg-MON1 bg-cover bg-center"></div>
+                        <div class="w-full h-2/5 bg-color-fuente-formularios rounded-b-lg dark:bg-gray-700">
+                            <p class="text-white font-bold text-x px-4 dark:text-white">Ref: Acer Nitro 5</p>
+                            <p class="text-white font-bold text-x px-4 dark:text-white">Proc: Core I5 10300h</p>
+                            <p class="text-white font-bold text-x px-4 dark:text-white">RAM: 8 GB DDR4</p>
+                            <p class="text-white font-bold text-x px-4 dark:text-white">HDD: 1TB</p>
+                            <p class="text-white font-bold text-x px-4 dark:text-white">Video: GTX 1650 4GB</p>
+                            <p class="text-white font-bold text-x px-4 dark:text-white">Precio: $ 2.650.000</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="Card w-80 lg:w-48">
+                    <a href="">
+                        <div class="w-full h-3/5 rounded-t-lg bg-MON2 bg-cover bg-center"></div>
+                        <div class="w-full h-2/5 bg-color-fuente-formularios rounded-b-lg dark:bg-gray-700">
+                            <p class="text-white font-bold text-x px-4 dark:text-white">Ref: Acer Nitro 5</p>
+                            <p class="text-white font-bold text-x px-4 dark:text-white">Proc: Core I5 10300h</p>
+                            <p class="text-white font-bold text-x px-4 dark:text-white">RAM: 8 GB DDR4</p>
+                            <p class="text-white font-bold text-x px-4 dark:text-white">HDD: 1TB</p>
+                            <p class="text-white font-bold text-x px-4 dark:text-white">Video: GTX 1650 4GB</p>
+                            <p class="text-white font-bold text-x px-4 dark:text-white">Precio: $ 2.650.000</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="p-6" id="sillas">
+            <p class="text-3xl font-semibold text-primary dark:text-white">Sillas</p>
+            <div class="w-auto h-auto items-center mt-6 flex flex-wrap gap-4 scrollbar-hide">
+                <div class="Card w-80 lg:w-48">
+                    <a href="">
+                        <div class="w-full h-3/5 rounded-t-lg bg-SG1 bg-cover bg-center"></div>
                         <div class="w-full h-2/5 bg-color-fuente-formularios rounded-b-lg dark:bg-gray-700">
                             <p class="text-white font-bold text-x px-4 dark:text-white">Ref: Acer Nitro 5</p>
                             <p class="text-white font-bold text-x px-4 dark:text-white">Proc: Core I5 10300h</p>
@@ -219,6 +387,8 @@
             </div>
         </div>
     </section>
-    <footer></footer>
+    <footer class="w-full h-12">
+        <small>Sitio Diseñado por <a href="https://github.com/CarlosMarioToro" target="_blank" rel="noopener">Carlos Mario Toro Zapata</a></small>
+    </footer>
 </body>
 </html>
