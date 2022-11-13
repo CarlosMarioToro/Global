@@ -680,6 +680,18 @@ select {
   position: fixed;
 }
 
+.left-0 {
+  left: 0px;
+}
+
+.bottom-0 {
+  bottom: 0px;
+}
+
+.z-50 {
+  z-index: 50;
+}
+
 .z-10 {
   z-index: 10;
 }
@@ -696,6 +708,10 @@ select {
   display: none;
 }
 
+.h-16 {
+  height: 4rem;
+}
+
 .h-12 {
   height: 3rem;
 }
@@ -708,8 +724,8 @@ select {
   height: 75%;
 }
 
-.h-96 {
-  height: 24rem;
+.h-auto {
+  height: auto;
 }
 
 .h-3\/5 {
@@ -720,22 +736,6 @@ select {
   height: 40%;
 }
 
-.h-\[56rem\] {
-  height: 56rem;
-}
-
-.h-\[28rem\] {
-  height: 28rem;
-}
-
-.h-\[30rem\] {
-  height: 30rem;
-}
-
-.h-auto {
-  height: auto;
-}
-
 .w-full {
   width: 100%;
 }
@@ -744,8 +744,12 @@ select {
   width: 3rem;
 }
 
-.w-11\/12 {
-  width: 91.666667%;
+.w-9\/12 {
+  width: 75%;
+}
+
+.w-4\/12 {
+  width: 33.333333%;
 }
 
 .w-auto {
@@ -756,28 +760,8 @@ select {
   width: 20rem;
 }
 
-.w-1\/2 {
-  width: 50%;
-}
-
-.w-1\/4 {
-  width: 25%;
-}
-
-.w-2\/4 {
-  width: 50%;
-}
-
-.w-9\/12 {
-  width: 75%;
-}
-
-.w-2\/12 {
-  width: 16.666667%;
-}
-
-.w-1\/12 {
-  width: 8.333333%;
+.flex-col {
+  flex-direction: column;
 }
 
 .flex-wrap {
@@ -800,18 +784,6 @@ select {
   gap: 1rem;
 }
 
-.space-x-8 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-x-reverse: 0;
-  margin-right: calc(2rem * var(--tw-space-x-reverse));
-  margin-left: calc(2rem * calc(1 - var(--tw-space-x-reverse)));
-}
-
-.space-x-4 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-x-reverse: 0;
-  margin-right: calc(1rem * var(--tw-space-x-reverse));
-  margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
-}
-
 .rounded-t-lg {
   border-top-left-radius: 0.5rem;
   border-top-right-radius: 0.5rem;
@@ -822,49 +794,29 @@ select {
   border-bottom-left-radius: 0.5rem;
 }
 
+.bg-light-color {
+  --tw-bg-opacity: 1;
+  background-color: rgb(210 169 217 / var(--tw-bg-opacity));
+}
+
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-color-fuente-formularios {
+.bg-primary-color {
   --tw-bg-opacity: 1;
-  background-color: rgb(25 27 36 / var(--tw-bg-opacity));
-}
-
-.bg-gray-400 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(156 163 175 / var(--tw-bg-opacity));
-}
-
-.bg-gray-300 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(209 213 219 / var(--tw-bg-opacity));
-}
-
-.bg-gray-200 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(229 231 235 / var(--tw-bg-opacity));
-}
-
-.bg-blue-300 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(147 197 253 / var(--tw-bg-opacity));
-}
-
-.bg-green-300 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(134 239 172 / var(--tw-bg-opacity));
-}
-
-.bg-green-200 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(187 247 208 / var(--tw-bg-opacity));
+  background-color: rgb(217 106 167 / var(--tw-bg-opacity));
 }
 
 .bg-green-100 {
   --tw-bg-opacity: 1;
   background-color: rgb(220 252 231 / var(--tw-bg-opacity));
+}
+
+.bg-color-fuente-formularios {
+  --tw-bg-opacity: 1;
+  background-color: rgb(25 27 36 / var(--tw-bg-opacity));
 }
 
 .bg-logo {
@@ -951,10 +903,6 @@ select {
   background-image: url('../img/SG1.png');
 }
 
-.bg-fondo2 {
-  background-image: url('../img/FONDO2.jpeg');
-}
-
 .bg-cover {
   background-size: cover;
 }
@@ -979,18 +927,9 @@ select {
   padding: 1.5rem;
 }
 
-.px-8 {
-  padding-left: 2rem;
-  padding-right: 2rem;
-}
-
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
-}
-
-.align-middle {
-  vertical-align: middle;
 }
 
 .text-base {
@@ -1011,6 +950,16 @@ select {
   font-weight: 600;
 }
 
+.text-secondary {
+  --tw-text-opacity: 1;
+  color: rgb(25 27 36 / var(--tw-text-opacity));
+}
+
+.text-terciary {
+  --tw-text-opacity: 1;
+  color: rgb(242 229 39 / var(--tw-text-opacity));
+}
+
 .text-primary {
   --tw-text-opacity: 1;
   color: rgb(118 121 129 / var(--tw-text-opacity));
@@ -1019,6 +968,10 @@ select {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.opacity-0 {
+  opacity: 0;
 }
 
 .scrollbar-hide {
@@ -1063,6 +1016,26 @@ select {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.hover\:bg-color-fuente-menu:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(118 121 129 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-contrast-color:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(242 229 39 / var(--tw-bg-opacity));
+}
+
+.hover\:text-terciary:hover {
+  --tw-text-opacity: 1;
+  color: rgb(242 229 39 / var(--tw-text-opacity));
+}
+
+.hover\:text-color-primary:hover {
+  --tw-text-opacity: 1;
+  color: rgb(217 106 167 / var(--tw-text-opacity));
+}
+
 .dark .dark\:bg-gray-800 {
   --tw-bg-opacity: 1;
   background-color: rgb(31 41 55 / var(--tw-bg-opacity));
@@ -1099,7 +1072,7 @@ select {
     width: 12rem;
   }
 
-  .lg\:bg-fondo2 {
+  .lg\:bg-img-fondo2 {
     background-image: url('../img/FONDO2.jpeg');
   }
 
